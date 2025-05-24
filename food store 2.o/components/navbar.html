@@ -1,0 +1,129 @@
+<nav class="navbar">
+    <div class="navbar__container">
+        <div class="navbar__brand">
+            <a href="index.html">
+                <i class="fas fa-utensils"></i>
+                <span class="brand-name">Food Store</span>
+            </a>
+        </div>
+
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle Menu">
+            <div class="toggle-wrapper">
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+                <span class="toggle-line"></span>
+            </div>
+        </button>
+
+        <div class="navbar__menu" id="navMenu">
+            <div class="navbar__links">
+                <a href="index.html" class="navbar__link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <div class="navbar__dropdown">
+                    <a href="menu.html" class="navbar__link">
+                        <i class="fas fa-book-open"></i>
+                        <span>Menu</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="menu-links">
+                            <a href="menu.html#quick-bites" class="menu-link">
+                                <i class="fas fa-hamburger"></i>
+                                <div class="menu-link__content">
+                                    <span>Quick Bites</span>
+                                    <small>Burgers, Sandwiches, Wraps</small>
+                                </div>
+                            </a>
+                            <a href="menu.html#main-dishes" class="menu-link">
+                                <i class="fas fa-utensils"></i>
+                                <div class="menu-link__content">
+                                    <span>Main Dishes</span>
+                                    <small>Pizza, Pasta, Rice Bowls</small>
+                                </div>
+                            </a>
+                            <a href="menu.html#healthy" class="menu-link">
+                                <i class="fas fa-leaf"></i>
+                                <div class="menu-link__content">
+                                    <span>Healthy</span>
+                                    <small>Salads, Smoothie Bowls</small>
+                                </div>
+                            </a>
+                            <a href="menu.html#beverages" class="menu-link">
+                                <i class="fas fa-glass-cheers"></i>
+                                <div class="menu-link__content">
+                                    <span>Beverages</span>
+                                    <small>Drinks, Smoothies, Shakes</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="about.html" class="navbar__link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="contact.html" class="navbar__link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        <div class="navbar__actions">
+            <div class="navbar__cart-wrapper">
+                <button class="navbar__cart" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <div class="cart-dropdown">
+                    <div class="cart-preview">
+                        <div class="cart-header">
+                            <h3>Shopping Cart</h3>
+                            <button class="close-cart" aria-label="Close Cart">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="cart-items">
+                            <p class="empty-cart">Your cart is empty</p>
+                        </div>
+                        <div class="cart-total">
+                            <span>Subtotal:</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="cart-actions">
+                            <a href="cart.html" class="navbar__button cart-button">View Cart</a>
+                            <a href="checkout.html" class="navbar__button checkout-button">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar__user-wrapper">
+                <button class="navbar__user-button" aria-label="User Menu">
+                    <i class="fas fa-user-circle"></i>
+                </button>
+                <div class="user-dropdown">
+                    <div class="user-menu">
+                        <a href="login.html" class="user-menu__item">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span>Sign In</span>
+                        </a>
+                        <a href="register.html" class="user-menu__item">
+                            <i class="fas fa-user-plus"></i>
+                            <span>Register</span>
+                        </a>
+                        <hr class="user-menu__divider">
+                        <a href="profile.html" class="user-menu__item">
+                            <i class="fas fa-user-cog"></i>
+                            <span>Profile</span>
+                        </a>
+                        <a href="orders.html" class="user-menu__item">
+                            <i class="fas fa-box"></i>
+                            <span>Orders</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

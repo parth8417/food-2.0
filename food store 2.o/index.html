@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Store - Home</title>
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <section class="hero">
+            <canvas class="particle-canvas"></canvas>
+            <video class="hero__video" autoplay muted loop playsinline poster="assets/images/hero-fallback.jpg">
+                <source src="assets/videos/food-bg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero__overlay"></div>
+            <div class="hero__wrapper">
+                <div class="hero__content">
+                    <div class="hero__badge animate-in" data-animation="fade-down">
+                        <i class="fas fa-crown"></i>
+                        <span>Ranked #1 Food Delivery</span>
+                        <div class="badge__live">
+                            <span class="live-dot"></span>
+                            <span>Live</span>
+                            <span class="online-count" data-count="2400">2.4k+ Online</span>
+                        </div>
+                    </div>
+                    <h1 class="hero__title animate-in" data-animation="fade-up">
+                        <span class="title__main">
+                            Experience <span class="number-one glow">World's #1</span><br>
+                            Food Delivery Service
+                        </span>
+                    </h1>
+                    <p class="hero__subtitle animate-in" data-animation="fade-up" data-delay="200">
+                        Trusted by over <span class="highlight counter">1,000,000+</span> food lovers worldwide
+                    </p>
+                    <div class="hero__stats animate-in" data-animation="fade-up" data-delay="400">
+                        <div class="stat" data-depth="2">
+                            <span class="stat__number counter" data-target="1000000" data-suffix="+">0</span>
+                            <span class="stat__label">Happy Customers</span>
+                        </div>
+                        <div class="stat" data-depth="2.5">
+                            <span class="stat__number">4.9<span class="stat__symbol">★</span></span>
+                            <span class="stat__label">Average Rating</span>
+                        </div>
+                        <div class="stat" data-depth="3">
+                            <span class="stat__number counter" data-target="500" data-suffix="+">0</span>
+                            <span class="stat__label">Cities Served</span>
+                        </div>
+                    </div>
+                    <div class="hero__actions animate-in" data-animation="fade-up" data-delay="600">
+                        <a href="#order" class="button button--primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Order Now</span>
+                            <span class="button__shine"></span>
+                        </a>
+                        <a href="#how" class="button button--glass" data-scroll>
+                            <i class="fas fa-play"></i>
+                            <span>How It Works</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="section__header" data-scroll="fade-up">
+                    <span class="section__subtitle">
+                        <i class="fas fa-award"></i>
+                        Why Choose Us
+                    </span>
+                    <h2 class="section__title">What Makes Us Different</h2>
+                    <p class="section__description">Experience the perfect blend of quality, speed, and reliability with our premium food delivery service</p>
+                </div>
+                <div class="features__grid">
+                    <div class="feature-card" data-scroll="fade-up" data-scroll-delay="0.1" style="--card-index: 0">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Lightning Fast Delivery</h3>
+                        <p>Average delivery time of 30 minutes or less to your doorstep, guaranteed fresh and hot</p>
+                        <div class="feature-card__stats">
+                            <div class="feature-stat">
+                                <span class="stat-number">30</span>
+                                <span class="stat-label">Minutes Avg.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-scroll="fade-up" data-scroll-delay="0.2" style="--card-index: 1">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Fresh Ingredients</h3>
+                        <p>Premium ingredients sourced daily from local markets, ensuring the highest quality in every dish</p>
+                        <div class="feature-card__stats">
+                            <div class="feature-stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Fresh Daily</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-scroll="fade-up" data-scroll-delay="0.3" style="--card-index: 2">
+                        <div class="feature-card__icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Best in Quality</h3>
+                        <p>Top-rated dishes prepared by expert chefs, maintaining consistent excellence in taste and presentation</p>
+                        <div class="feature-card__stats">
+                            <div class="feature-stat">
+                                <span class="stat-number">4.9<i class="fas fa-star"></i></span>
+                                <span class="stat-label">User Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-dishes">
+            <div class="container">
+                <div class="section__header" data-scroll="fade-up">
+                    <span class="section__subtitle">
+                        <i class="fas fa-utensils"></i>
+                        Our Menu
+                    </span>
+                    <h2 class="section__title">Popular Dishes</h2>
+                    <p class="section__description">Discover our most loved dishes, crafted with passion and premium ingredients</p>
+                </div>
+                <div class="dishes__grid">
+                    <div class="dish-card" data-scroll="fade-up" data-scroll-delay="0.1">
+                        <div class="dish-card__image">
+                            <img src="assets/images/SpecialPizza.jpg" alt="Special Pizza">
+                            <div class="dish-card__badge">Best Seller</div>
+                            <div class="dish-card__overlay">
+                                <button class="button button--glass button--sm">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="dish-card__content">
+                            <h3>Special Pizza</h3>
+                            <div class="dish-card__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.5)</span>
+                            </div>
+                            <p class="dish-card__description">Hand-tossed pizza with premium toppings and our secret sauce</p>
+                            <div class="dish-card__footer">
+                                    <span class="dish-card__price">₹1,125</span>
+                                <button class="button button--primary button--sm">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish-card" data-scroll="fade-up" data-scroll-delay="0.2">
+                        <div class="dish-card__image">
+                            <img src="assets/images/BurgerCombo.jpg" alt="Burger Combo">
+                            <div class="dish-card__badge">Popular</div>
+                            <div class="dish-card__overlay">
+                                <button class="button button--glass button--sm">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="dish-card__content">
+                            <h3>Burger Combo</h3>
+                            <div class="dish-card__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(5.0)</span>
+                            </div>
+                            <p class="dish-card__description">Juicy beef patty with fresh veggies and special sauce</p>
+                            <div class="dish-card__footer">
+                                <span class="dish-card__price">₹975</span>
+                                <button class="button button--primary button--sm">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dish-card" data-scroll="fade-up" data-scroll-delay="0.3">
+                        <div class="dish-card__image">
+                            <img src="assets/images/WhitePasta.jpg" alt="Pasta">
+                            <div class="dish-card__badge">New</div>
+                            <div class="dish-card__overlay">
+                                <button class="button button--glass button--sm">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="dish-card__content">
+                            <h3>Pasta</h3>
+                            <div class="dish-card__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8)</span>
+                            </div>
+                            <p class="dish-card__description">Al dente pasta in rich creamy sauce with fresh herbs</p>
+                            <div class="dish-card__footer">
+                                <span class="dish-card__price">₹825</span>
+                                <button class="button button--primary button--sm">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Order Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <div class="section__header" data-scroll="fade-up">
+                    <span class="section__subtitle">
+                        <i class="fas fa-quote-left"></i>
+                        Testimonials
+                    </span>
+                    <h2 class="section__title">What Our Customers Say</h2>
+                    <p class="section__description">Discover why thousands of food lovers trust our service</p>
+                </div>
+
+                <div class="testimonials__carousel">
+                    <div class="testimonials__track">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__profile">
+                                <img src="assets/images/testimonial1.jpg" alt="Aayush Sapra">
+                                <div class="profile__info">
+                                    <h4>Aayush Sapra</h4>
+                                    <span>Food Enthusiast</span>
+                                    <div class="testimonial-card__rating">
+                                        <i class="fas fa-star" style="--i: 1"></i>
+                                        <i class="fas fa-star" style="--i: 2"></i>
+                                        <i class="fas fa-star" style="--i: 3"></i>
+                                        <i class="fas fa-star" style="--i: 4"></i>
+                                        <i class="fas fa-star" style="--i: 5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"The food delivery service has been nothing short of exceptional. Every dish arrives perfectly hot and fresh, and the delivery is always prompt. Their attention to detail and customer service has made them my go-to choice for food delivery."</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__profile">
+                                <img src="assets/images/testimonial2.jpg" alt="Veggie Paaji">
+                                <div class="profile__info">
+                                    <h4>Veggie Paaji</h4>
+                                    <span>Food Enthusiast</span>
+                                    <div class="testimonial-card__rating">
+                                        <i class="fas fa-star" style="--i: 1"></i>
+                                        <i class="fas fa-star" style="--i: 2"></i>
+                                        <i class="fas fa-star" style="--i: 3"></i>
+                                        <i class="fas fa-star" style="--i: 4"></i>
+                                        <i class="fas fa-star" style="--i: 5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"Lightning-fast delivery and amazing customer service. The variety of restaurants available is impressive. Highly recommended!"</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__profile">
+                                <img src="assets/images/testimonial3.jpg" alt="Vishwa Joshi">
+                                <div class="profile__info">
+                                    <h4>Vishwa Joshi</h4>
+                                    <span>Verified Customer</span>
+                                    <div class="testimonial-card__rating">
+                                        <i class="fas fa-star" style="--i: 1"></i>
+                                        <i class="fas fa-star" style="--i: 2"></i>
+                                        <i class="fas fa-star" style="--i: 3"></i>
+                                        <i class="fas fa-star" style="--i: 4"></i>
+                                        <i class="fas fa-star-half-alt" style="--i: 5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"The app is so easy to use, and the delivery drivers are always professional. Great experience every time I order!"</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__profile">
+                                <img src="assets/images/testimonial4.jpg" alt="Vishwa Joshi">
+                                <div class="profile__info">
+                                    <h4>Vishwa Joshi</h4>
+                                    <span>Verified Customer</span>
+                                    <div class="testimonial-card__rating">
+                                        <i class="fas fa-star" style="--i: 1"></i>
+                                        <i class="fas fa-star" style="--i: 2"></i>
+                                        <i class="fas fa-star" style="--i: 3"></i>
+                                        <i class="fas fa-star" style="--i: 4"></i>
+                                        <i class="fas fa-star-half-alt" style="--i: 5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"Outstanding service! The food quality is consistently excellent, and the delivery is always on time. Their customer support team is incredibly helpful too!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="testimonials__controls">
+                        <button class="control-btn prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="control-btn next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="testimonials__progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/hero-effects.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/home.js"></script>
+</body>
+</html>

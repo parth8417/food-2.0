@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store - Contact Us</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="contact-page">
+        <section class="hero-section text-center" data-aos="fade-down">
+            <div class="container narrow-container">
+                <div class="hero-content fade-in">
+                    <span class="hero-badge">
+                        <i class="fas fa-headset"></i>
+                        Get in Touch
+                    </span>
+                    <h1>Contact Us</h1>
+                    <p>We're here to help and answer any questions you might have</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header text-center" data-aos="fade-up">
+                    <h2>Get In Touch With Us</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">We're always here to help you</p>
+                </div>
+                <div class="contact-grid centered-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="section-badge">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Contact Details</span>
+                        </div>
+                        <h2>Let's Get in Touch</h2>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>Address</h3>
+                                    <p>123 Food Street, NY 10001</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>Phone</h3>
+                                    <p>+1 234 567 890</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <p>support@foodstore.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>Working Hours</h3>
+                                    <p>Mon - Sun: 10:00 AM - 11:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="support-hours">
+                            <h3><i class="fas fa-headset"></i> Customer Support Hours</h3>
+                            <div class="hours-grid">
+                                <div class="hours-item">
+                                    <span>Monday - Friday:</span>
+                                    <span>9:00 AM - 10:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Saturday - Sunday:</span>
+                                    <span>10:00 AM - 8:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form" data-aos="fade-left">
+                        <div class="section-badge">
+                            <i class="fas fa-envelope"></i>
+                            <span>Send Message</span>
+                        </div>
+                        <h2>How Can We Help?</h2>
+                        <form id="contactForm" class="validated-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" required pattern="[A-Za-z ]{2,}" 
+                                    data-error="Please enter a valid name (minimum 2 characters)">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" required 
+                                    data-error="Please enter a valid email address">
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="type">Inquiry Type</label>
+                                <select id="type" required>
+                                    <option value="">Select an option</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="business">Business Partnership</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                            <div class="form-footer">
+                                <button type="submit" class="button button--primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Send Message
+                                </button>
+                                <p class="privacy-note">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Your information is protected by our privacy policy
+                                </p>
+                            </div>
+                            <div class="form-status">
+                                <div class="loading-spinner">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending message...
+                                </div>
+                                <div class="success-message">
+                                    <i class="fas fa-check-circle"></i>
+                                    Message sent successfully!
+                                </div>
+                                <div class="error-message">
+                                    <i class="fas fa-exclamation-circle"></i>
+                                    Failed to send message. Please try again.
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" data-aos="fade-up">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to questions you may have</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item" data-aos="fade-up">
+                        <button class="faq-toggle">
+                            <h3><i class="fas fa-question-circle"></i> How do I track my order?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>You can track your order in real-time through our app or website by:</p>
+                            <ul>
+                                <li>Logging into your account</li>
+                                <li>Visiting the 'My Orders' section</li>
+                                <li>Clicking on your active order</li>
+                            </ul>
+                            <p>You'll also receive SMS and email updates about your order status.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up">
+                        <button class="faq-toggle">
+                            <h3><i class="fas fa-question-circle"></i> What payment methods do you accept?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>We accept all major credit cards, digital wallets, and cash on delivery for your convenience.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up">
+                        <button class="faq-toggle">
+                            <h3><i class="fas fa-question-circle"></i> How long does delivery take?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>Delivery times typically range from 30-45 minutes depending on your location and order volume.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section" data-aos="zoom-in">
+            <div class="container">
+                <div class="map-wrapper">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596698663!2d-74.25987368715491!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1647655399245!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

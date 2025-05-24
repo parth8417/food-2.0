@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store - Menu</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="menu-page">
+        <div class="hero-section">
+            <div class="hero-content fade-in">
+                <span class="hero-badge">
+                    <i class="fas fa-crown"></i>
+                    Premium Selection
+                </span>
+                <h1>Our Menu</h1>
+                <p>Experience the finest flavors, crafted with passion and premium ingredients</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="menu-header">
+                <div class="menu-controls">
+                    <div class="controls-left">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="searchMenu" placeholder="Search dishes, ingredients, or categories...">
+                        </div>
+                    </div>
+                    <div class="controls-right">
+                        <div class="menu-sort">
+                            <select id="sortMenu">
+                                <option value="default">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-filters slide-in">
+                    <button class="filter-btn active" data-category="all">
+                        <i class="fas fa-utensils"></i>
+                        <span>All Items</span>
+                        <span class="item-count">12</span>
+                    </button>
+                    <button class="filter-btn" data-category="main">
+                        <i class="fas fa-hamburger"></i>
+                        <span>Main Course</span>
+                    </button>
+                    <button class="filter-btn" data-category="appetizer">
+                        <i class="fas fa-cheese"></i>
+                        <span>Appetizers</span>
+                    </button>
+                    <button class="filter-btn" data-category="dessert">
+                        <i class="fas fa-ice-cream"></i>
+                        <span>Desserts</span>
+                    </button>
+                    <button class="filter-btn" data-category="beverage">
+                        <i class="fas fa-glass-martini-alt"></i>
+                        <span>Beverages</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-content">
+                <div class="menu-grid fade-up" id="menuGrid">
+                    <div class="loading-spinner" id="menuLoader">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                    <!-- Menu items will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-fab">
+            <button id="viewCart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
